@@ -18,14 +18,13 @@ int main() {
     PrintWelcome();
 
 
-
     char symbol;
     do {
         PrintMenu();
-        cout << "Enter menu item - " ; cin >> symbol;
+        cout << "Enter menu item - ";
+        cin >> symbol;
 
-        switch (symbol)
-        {
+        switch (symbol) {
             case '1':
                 break;
             case '2':
@@ -37,10 +36,10 @@ int main() {
             case '5':
                 break;
             case '0':
-                cout << "Good bye!"  << endl;
+                cout << "Good bye!" << endl;
                 break;
             default:
-                cout << "Invalid menu item"  << endl;
+                PrintError("Invalid menu item");
                 break;
         }
 

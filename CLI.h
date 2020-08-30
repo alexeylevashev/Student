@@ -1,7 +1,6 @@
 #pragma once
-
 #include <iostream>
-
+#include <string>
 using namespace std;
 
 void PrintWelcome() {
@@ -29,4 +28,13 @@ void PrintMenu() {
     cout << "+++++++++++++++++++++++++++" << endl;
     cout << endl << endl;
 
+}
+
+void PrintError (string message)
+{
+    cout << "!!!!!!!!!!!!!!!!!!!!!" << endl;
+    cout << "! ! ! E R R O R ! ! !" << endl;
+    cout << "!!!" << message << "!!!" << endl;
+    cout << "!!!!!!!!!!!!!!!!!!!!!" << endl;
+    cout << endl ;
 }
