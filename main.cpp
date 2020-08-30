@@ -1,36 +1,53 @@
 #include <iostream>
 #include "ClassStudent.h"
+#include "CLI.h"
 
 using namespace std;
 
-int ExeptionAge()
-{
+int ExeptionAge() {
     int age;
-    do
-    {
+    do {
         cout << "Invalid age" << endl;
-        cout << "Enter age: "; cin >> age;
+        cout << "Enter age: ";
+        cin >> age;
     } while (age <= 10 || age > 80);
     return age;
 }
 
-int main()
-{
-    Student student;
+int main() {
+    PrintWelcome();
 
-    int age;
-    try
-    {
-        cout << "Enter age: "; cin >> age;
-        student.SetAge(age);
-    }
-    catch (int e)
-    {
-        if (e == -1)
+
+
+    char symbol;
+    do {
+        PrintMenu();
+        cout << "Enter menu item - " ; cin >> symbol;
+
+        switch (symbol)
         {
-            student.SetAge(ExeptionAge());
+            case '1':
+                break;
+            case '2':
+                break;
+            case '3':
+                break;
+            case '4':
+                break;
+            case '5':
+                break;
+            case '0':
+                cout << "Good bye!"  << endl;
+                break;
+            default:
+                cout << "Invalid menu item"  << endl;
+                break;
         }
-    }
-    cout << student.GetAge() << endl;
+
+    } while (symbol != '0');
+
+
+    system("pause");
+
 }
 
