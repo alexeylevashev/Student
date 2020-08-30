@@ -10,7 +10,7 @@ void PrintWelcome() {
     cout << endl;
     cout << "****************************" << endl;
     cout << "(c) STEP IT Academy" << endl;
-    cout << "email: starinin_a@itstep.org" << endl;
+    cout << "email: alexey.levashev@tl-istu.com" << endl;
     cout << "****************************" << endl;
     cout << endl;
 
@@ -36,5 +36,14 @@ void PrintError (string message)
     cout << "! ! ! E R R O R ! ! !" << endl;
     cout << "!!!" << message << "!!!" << endl;
     cout << "!!!!!!!!!!!!!!!!!!!!!" << endl;
+    cout << endl ;
+}
+
+void PrintExit ()
+{
+    cout << endl ;
+    cout << "-----------------" << endl;
+    cout << "--- Good bye! ---" << endl;
+    cout << "-----------------" << endl;
     cout << endl ;
 }

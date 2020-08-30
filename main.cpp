@@ -36,7 +36,7 @@ int main() {
             case '5':
                 break;
             case '0':
-                cout << "Good bye!" << endl;
+                PrintExit();
                 break;
             default:
                 PrintError("Invalid menu item");
