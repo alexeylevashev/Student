@@ -13,6 +13,15 @@ int ExeptionAge() {
     } while (age <= 10 || age > 80);
     return age;
 }
+int ExeptionMark() {
+    int mark;
+    do {
+        cout << "Invalid mark" << endl;
+        cout << "Enter mark: ";
+        cin >> mark;
+    } while (mark <= 0 || mark > 5);
+    return mark;
+}
 
 int main() {
     PrintWelcome();
