@@ -1,6 +1,7 @@
 #include <iostream>
 #include "ClassStudent.h"
 #include "CLI.h"
+#include "ExportToFile.h"
 
 using namespace std;
 
@@ -26,6 +27,8 @@ int ExeptionMark() {
 int main() {
     PrintWelcome();
 
+    const int SIZE=3;
+    Student students[SIZE];
 
     char symbol;
     do {
@@ -37,12 +40,16 @@ int main() {
             case '1':
                 break;
             case '2':
+                AddStudent(students,SIZE);
                 break;
             case '3':
                 break;
             case '4':
                 break;
             case '5':
+                break;
+            case '6':
+                Export(students,SIZE);
                 break;
             case '0':
                 PrintExit();
